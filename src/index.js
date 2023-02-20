@@ -14,15 +14,15 @@ import { store } from './redux/store'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "https://gitname.github.io/minnerGame/",
     element: <App />,
   },
   {
-    path: "game",
+    path: "https://gitname.github.io/minnerGame/game",
     element: <Game />,
   },
   {
-    path: "leaders",
+    path: "https://gitname.github.io/minnerGame/leaders",
     element: <Leaders />,
   },
   {
