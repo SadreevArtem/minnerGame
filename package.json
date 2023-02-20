@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "minner",
   "version": "0.1.0",
-  "homepage": "https://sadreevartem.github.io/minnerGame/",
+  "homepage": "https://sadreevartem.github.io/minnerGame",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
