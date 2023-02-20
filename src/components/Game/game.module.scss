@@ -10,11 +10,22 @@
     display: flex;
 }
 
-// .x {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 24;
-//     height: 24;
-//     margin: 1;
-// }
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    h2 {
+        color: red;
+    }
+}
+
+.win {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: green;
+    }
+}
