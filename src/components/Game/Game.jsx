@@ -105,7 +105,7 @@ export const Game = () => {
   const mineOfField =
     field.filter((el) => el === -1).length -
     mask.filter((el) => el === "Flag").length;
-  console.log({ mask });
+  
   return (
     <div className={styles.wr}>
       <div className={styles.wr_header}>

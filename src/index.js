@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom"
 import App from './App'
@@ -12,7 +12,7 @@ import { NotFound } from './components/NotFound/NotFound'
 import { Provider } from 'react-redux'
 import { store } from './redux/store'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,

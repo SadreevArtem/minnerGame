@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import * as Yup from 'yup'
 import { setPlayer } from '../../redux/slices/gameSlices/gameSlices'
-import { REQUIRED_ERROR_MESSAGE } from '../../utils/constants'
+import { MIN_ERROR_MESSAGE, REQUIRED_ERROR_MESSAGE } from '../../utils/constants'
 import { Modal } from '../Modal/Modal'
 import styles from './newGame.module.scss'
 
@@ -23,7 +23,7 @@ export const NewGame = () => {
     setIsOpen(false)
   }
 
-  const submitHandler = (values) => {console.log(values)
+  const submitHandler = (values) => {
     dispatch(setPlayer(values)) 
     navigate('game')
     closeHandler()
@@ -42,7 +42,9 @@ export const NewGame = () => {
             validationSchema={Yup.object(
               {
                 name: Yup.string()
-                  .required(REQUIRED_ERROR_MESSAGE),
+                  .required(REQUIRED_ERROR_MESSAGE)
+                  .min(2, MIN_ERROR_MESSAGE)
+                  .matches(/^\S*$/, 'not space'),
               },
             )}
             onSubmit={submitHandler}
