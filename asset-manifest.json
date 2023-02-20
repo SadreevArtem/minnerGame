@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/minnerGame/static/css/main.c0118567.css",
-    "main.js": "/minnerGame/static/js/main.7d2489f8.js",
+    "main.js": "/minnerGame/static/js/main.66879f62.js",
     "static/media/mine.svg": "/minnerGame/static/media/mine.7a52bcf105710347aa51aaf0f226b611.svg",
     "index.html": "/minnerGame/index.html",
     "main.c0118567.css.map": "/minnerGame/static/css/main.c0118567.css.map",
-    "main.7d2489f8.js.map": "/minnerGame/static/js/main.7d2489f8.js.map"
+    "main.66879f62.js.map": "/minnerGame/static/js/main.66879f62.js.map"
   },
   "entrypoints": [
     "static/css/main.c0118567.css",
-    "static/js/main.7d2489f8.js"
+    "static/js/main.66879f62.js"
   ]
 }
