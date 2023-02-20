@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className='wr d-flex flex-column h-100 justify-content-center align-items-center'>
         <h1 className='logo'>MINNER</h1>
-        <img src={bombLogo} alt="bomb" />
+        <img className='logo_img' src={bombLogo} alt="bomb" />
         <NewGame />
         <NavLink to="leaders">
           <button type="button" className="btn my-3 btn-warning">Лидеры игры</button>
