@@ -166,6 +166,10 @@ export const Game = () => {
                         clear(x - 1, y);
                         clear(x, y + 1);
                         clear(x, y - 1);
+                        clear(x + 1, y - 1);
+                        clear(x - 1, y - 1);
+                        clear(x + 1, y + 1);
+                        clear(x - 1, y + 1);
                       }
 
                       if (field[y * size + x] === MINE) {
